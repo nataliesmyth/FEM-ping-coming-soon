@@ -200,10 +200,11 @@ footer {
   
   #emailError.visible {
     display: block;
+    color: hsl( var(--bg-secondary-red) );
   }
   
   input.invalid {
-    border-color: red;
+    border-color: hsl( var(--bg-secondary-red) );
   }
   
 
