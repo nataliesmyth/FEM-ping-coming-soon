@@ -13,7 +13,7 @@
         /* fonts */
         --ff-base: 'Libre Franklin', sans-serif;
 
-        /* wont weight */
+        /* font weight */
         --fw-300: 300;
         --fw-600: 600;
         --fw-700: 700;
@@ -91,6 +91,121 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+body {
+    font-size: var(--fs-base);
+}
+
+.logo {
+    font-size: 2rem;
+    margin-block: 2em;
+    /* padding-block: 3em; */
+}
+
+/* Utility Classes */
+.sr-only {
+    position: absolute; 
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px; 
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+  /* colors */
+
+  .bg-primary { background-color: hsl( var(--bg-primary)) }
+  .clr-primary { color: hsl( var(--bg-primary)) }
+  .clr-neutral-light { color: hsl( var(--clr-neutral-light)) }
+  .clr-neutral-dark { color: hsl( var(--clr-neutral-dark)) }
+  .uppercase { text-transform: uppercase }
+  .font-primary { font-family: var(--ff-base) }
+  .text-white { color: #fff }
+
+  /* typography */
+  .light { font-weight: var(--fw-300)}
+  .semi-bold { font-weight: var(--fw-600) }
+  .bold { font-weight: var(--fw-700) }
+
+  .border-round {
+    border-radius: 100px;
+  }
+
+.main {
+    margin: 2em auto;
+    padding-inline: 2em;
+    text-align: center;
+}
+
+h1 {
+    padding-block-end: 1em;
+}
+
+ul {
+    /* width: 17.5625rem; */
+    padding-inline-start: 0;
+}
+
+li {
+    list-style: none;
+    padding-block: .5em;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-input {
+    border: 1px solid hsl( var(--bg-secondary-blue));
+    height: 2.5rem;
+}
+
+.btn {
+    width: 100%;
+    height: 3rem;
+    border: none;
+}
+
+.img-section {
+    margin-block: 2em;
+    padding-block: 1em;
+}
+
+.social {
+    margin-block: 2em;
+}
+.social > a {
+    border-radius: 50%;
+    border: 1px solid hsl( var(--clr-neutral-light));
+    color: hsl( var(--bg-primary));
+    aspect-ratio: 1;
+    padding: .5em .75em;
+    width: 100%;
+    height: 100%;
+    margin-inline: .5em;
+}
+
+footer {
+    text-align: center;
+}
+
+#emailError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #emailError.visible {
+    display: block;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }
+  
 
 @media (min-width:1440px) {
     

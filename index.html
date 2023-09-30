@@ -12,21 +12,44 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/9cea9f30d2.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
 </head>
-<body>
+<body class="font-primary">
+  <main class="main">
+  <div class="logo uppercase bold">ping<span class="clr-primary">.</span></div>
+    <h1 class="light clr-neutral-light">We are launching <span class="bold clr-neutral-dark">soon!</span></h1>
+    <p class="clr-neutral-dark">Subscribe and get notified</p>
 
-  We are launching soon!
+    <form>
+      <ul>
+        <li>
+          <input type="email" id="mail" name="user_email"  placeholder="Your email address..." class="form-input border-round" />
+        </li>
+        <span role="alert" id="emailError" aria-hidden="true">
+          Please provide a valid email address
+        </span>
+        <li class="button">
+          <button type="submit" id="submit" class="btn border-round bg-primary text-white semi-bold">Notify Me</button>
+        </li>
+      </ul>
+    </form>
+    <div class="img-section">
+      <img src="images/illustration-dashboard.png" alt="">
+    </div>
+  </main>
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
+  
+  
+  
+  <footer class="footer">
+    <div class="social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="text">
+      <p class="clr-neutral-light">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Natalie Smyth</a>.
     </p>
   </footer>
 </body>
